@@ -56,7 +56,7 @@ public class ProductController {
     }
 
     @DeleteMapping("/{id}")
-    @Operation(summary = "CRIAR PRODUTO", description = "APAGA UM PRODUTO DO BANCO DE DADOS")
+    @Operation(summary = "APAGAR PRODUTO", description = "APAGA UM PRODUTO DO BANCO DE DADOS")
     public ResponseEntity<?> delete(@PathVariable Long id) throws RuntimeException {
         try {
             service.delete(id);
